@@ -1,0 +1,22 @@
+name: test
+
+on:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add label
+        uses: ./
+        with:
+          issue: ${{ github.event.number }}
+          label: test-label
+          action: add
+
+      - name: Remove label
+        uses: ./
+        with:
+          issue: ${{ github.event.number }}
+          label: test-label
+          action: remove
