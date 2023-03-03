@@ -66,7 +66,7 @@ runs:
         if response.code == 200:
           print("Label added")
         else:
-          if "${{ inputs.suppress }}"" == "false":
+          if "${{ inputs.suppress }}" == "false":
             print(f"::error::{response.code}: Error adding label.")
             sys.exit(1)
           print(f"::warning::{response.code}: Error adding label.")
