@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This repository was moved to https://github.com/ecmwf/build-package. Do not update!
+
 # A GitHub action to manage PR/issue labels
 
 ## Usage
